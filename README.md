@@ -2,7 +2,15 @@
 
 ## Overview
 
-Analyzing raw CAN data from MF4 files to discover fuel-related signals.
+This project focuses on analyzing raw CAN data from MF4 files to discover fuel-related signals.
+
+## Tech Stack
+
+- Python
+- pandas
+- asammdf
+- SQL
+- Tableau
 
 ## Status
 
