@@ -1,6 +1,6 @@
-![Dashboard Overview](outputs/screenshots/dashboard_overview/01_full_dashboard_overview.png)
-
 # Vehicle CAN Telemetry Analytics Pipeline
+
+![Dashboard Overview](./outputs/screenshots/dashboard_overview/01_full_dashboard.png)
 
 ## Overview
 
