@@ -1,5 +1,22 @@
+# Python
 venv/
 __pycache__/
 *.pyc
-.DS_Storedata/*.MF4
-outputs/multi_file_can_id_111.csv
+
+# Mac
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large raw telemetry files
+data/*.MF4
+
+# Large raw exports
+outputs/raw_exports/*.csv
+
+# Tableau temp files
+*.hyper
+
+# AWS / credentials
+.env
