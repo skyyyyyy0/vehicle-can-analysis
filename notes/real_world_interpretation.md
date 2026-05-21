@@ -10,7 +10,7 @@ Stable sections with minimal variation were more commonly associated with inferr
 
 ---
 
-## Vehicle Efficiency Interpretation
+## Vehicle Load Interpretation
 
 Repeated transitions between stable and dynamic signal regions may indicate changing operational load conditions within the vehicle system.
 
@@ -27,3 +27,18 @@ The highly dynamic behavior observed in `byte_4` and `byte_5` may reflect change
 In contrast, `byte_7` remained relatively stable throughout the recording, suggesting a possible supporting role such as a state flag or checksum-related field.
 
 The coexistence of highly dynamic and highly stable bytes indicates that CAN ID 111 likely contains multiple operational signal components within a single frame.
+
+---
+
+## Telemetry Monitoring Relevance
+
+The repeated appearance of abrupt transition clusters across multiple MF4 datasets demonstrates how transition-based analytics may support telemetry monitoring workflows.
+
+The project showed how transition magnitude analytics can help:
+
+- identify unstable telemetry regions
+- monitor dynamic operational activity
+- isolate abrupt telemetry transitions
+- support anomaly-focused dashboard monitoring
+
+The Tableau dashboard further demonstrated how telemetry instability patterns can be visualized through KPI monitoring panels and anomaly-focused analytics views.

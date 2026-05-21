@@ -31,3 +31,42 @@ The byte showed very low standard deviation and weak correlation with other fiel
 This behavior suggests that `byte_7` may function as a stable operational field such as a status flag, identifier, or checksum-related component within the CAN frame structure.
 
 The contrast between highly dynamic and highly stable bytes further supports the interpretation that CAN ID 111 contains multiple independent signal roles.
+
+---
+
+## Insight 4 — Consistent Transition-Based Segmentation Across Multiple Datasets
+
+The transition-based segmentation heuristic remained consistent across multiple MF4 validation datasets.
+
+Files with elevated transition activity consistently produced:
+
+- higher driving ratios
+- increased signal variability
+- more dynamic telemetry regions
+
+Stable sessions remained dominated by low-transition idle-like behavior.
+
+This consistency suggests that transition-magnitude-based segmentation may provide a useful heuristic for identifying operational telemetry states across different driving sessions.
+
+The repeated appearance of stable and dynamic segmentation patterns across multiple files further supports the repeatability of the observed telemetry behavior.
+
+---
+
+## Insight 5 — Anomaly Clustering and Telemetry Monitoring Relevance
+
+Anomaly detection analysis revealed that extreme Byte 4 transition events frequently appeared in clustered telemetry regions rather than isolated random points.
+
+These anomaly clusters were strongly associated with:
+
+- elevated rolling variability
+- dynamic operational regions
+- repeated abrupt signal transitions
+
+The repeated appearance of anomaly clusters across multiple MF4 sessions suggests that the detected behavior may represent recurring telemetry-state transition activity rather than isolated signal noise.
+
+This demonstrates how transition-based telemetry analytics may support:
+
+- anomaly-focused monitoring workflows
+- telemetry validation systems
+- operational state tracking
+- dashboard-based telemetry monitoring
