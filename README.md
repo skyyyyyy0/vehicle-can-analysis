@@ -110,7 +110,7 @@ Signal Insight & KPI Reporting
 
 ### 4. Anomaly Detection
 
-<img src="./outputs/screenshots/anomaly_detection/07_anomaly_detection_panel.png" width="850"/>
+<img src="./outputs/screenshots/anomaly_detection/07_anomaly_detection_panel.png" width="500"/>
 
 - Used Byte 4 transition magnitude to identify extreme transition events
 - Defined high-magnitude transitions as anomaly candidates
