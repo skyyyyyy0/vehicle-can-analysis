@@ -101,7 +101,7 @@ Signal Insight & KPI Reporting
 
 ### 3. Multi-file Validation
 
-![Session Behavior Comparison](./outputs/screenshots/session_behavior/04_session_behavior_comparison.png)
+![Session Behavior Comparison](./outputs/screenshots/kpi_analysis/03_behavior_and_extreme_events.png)
 
 - Processed multiple MF4 files
 - Extracted CAN ID 111 across all validation datasets
