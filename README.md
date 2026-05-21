@@ -234,10 +234,10 @@ outputs/screenshots/
 Recommended dashboard images include:
 
 ```text
-01_full_dashboard_overview.png
-02_kpi_summary_panel.png
-03_driving_vs_idle_comparison.png
-04_session_behavior_comparison.png
+01_full_dashboard.png
+02_kpi_and_transition_analysis.png
+03_behavior_and_extreme_events.png
+04_anomaly_detection_panel.png
 05_driving_state_distribution.png
 06_extreme_transition_events.png
 07_anomaly_detection_panel.png
