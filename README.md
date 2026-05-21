@@ -19,6 +19,12 @@ MF4 Files
 → Tableau Dashboard Visualization
 ```
 
+## Problem Statement
+
+Raw CAN telemetry data is difficult to interpret because signal definitions are often unavailable or undocumented.
+
+The goal of this project was to investigate whether meaningful operational telemetry behavior could be inferred directly from raw MF4 CAN data using byte-level signal analysis, transition-based segmentation, anomaly detection, cloud SQL analytics, and dashboard visualization.
+
 ---
 
 ## Objectives
@@ -87,11 +93,15 @@ Signal Insight & KPI Reporting
 
 ### 2. Driving vs Idle Segmentation
 
+![Driving vs Idle Comparison](./outputs/screenshots/session_behavior/03_driving_vs_idle_comparison.png)
+
 - Created a heuristic segmentation method using Byte 4 transition magnitude
 - Compared signal behavior between driving and idle states
 - Found that driving states produced much larger transition magnitudes than idle states
 
 ### 3. Multi-file Validation
+
+![Session Behavior Comparison](./outputs/screenshots/session_behavior/04_session_behavior_comparison.png)
 
 - Processed multiple MF4 files
 - Extracted CAN ID 111 across all validation datasets
@@ -99,6 +109,8 @@ Signal Insight & KPI Reporting
 - Classified sessions into stable, mixed, and dynamic behavior groups
 
 ### 4. Anomaly Detection
+
+![Anomaly Detection](./outputs/screenshots/anomaly_detection/07_anomaly_detection_panel.png)
 
 - Used Byte 4 transition magnitude to identify extreme transition events
 - Defined high-magnitude transitions as anomaly candidates
@@ -121,6 +133,8 @@ The final Tableau dashboard includes:
 ---
 
 ## KPI Metrics
+
+![KPI Summary](./outputs/screenshots/kpi_analysis/02_kpi_summary_panel.png)
 
 The dashboard includes the following KPIs:
 
