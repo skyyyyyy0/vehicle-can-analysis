@@ -1,5 +1,7 @@
 # Vehicle CAN Telemetry Analytics Pipeline
 
+Cloud-based vehicle telemetry analytics pipeline using Python, AWS Athena, and Tableau.
+
 ![Dashboard Overview](./outputs/screenshots/dashboard_overview/01_full_dashboard.png)
 
 ## Overview
@@ -8,7 +10,7 @@ This project analyzes raw vehicle CAN telemetry data extracted from MF4 files.
 
 The pipeline processes CAN signals using Python, AWS S3, Athena SQL, and Tableau to identify driving-state behavior, signal transitions, anomaly patterns, and session-level telemetry characteristics.
 
-This project simulates a real-world telemetry analytics workflow:
+The pipeline workflow is structured as follows:
 
 ```text
 MF4 Files
@@ -262,4 +264,4 @@ Recommended dashboard images include:
 - AWS S3 storage complete
 - Athena SQL analytics complete
 - Tableau dashboard complete
-- Portfolio-ready documentation in progress
+- Portfolio-ready documentation finalized
