@@ -93,7 +93,7 @@ Signal Insight & KPI Reporting
 
 ### 2. Driving vs Idle Segmentation
 
-![Driving vs Idle Comparison](./outputs/screenshots/session_behavior/03_driving_vs_idle_comparison.png)
+![Driving vs Idle Comparison](./outputs/screenshots/session_behavior/05_driving_state_distribution.png)
 
 - Created a heuristic segmentation method using Byte 4 transition magnitude
 - Compared signal behavior between driving and idle states
