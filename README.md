@@ -6,7 +6,7 @@
 
 This project analyzes raw vehicle CAN telemetry data extracted from MF4 files.
 
-The goal of this project was to identify meaningful CAN signal behavior, validate driving-state patterns, detect anomalous signal transitions, and build an end-to-end cloud-based analytics pipeline using Python, AWS S3, Athena, SQL, and Tableau.
+The pipeline processes CAN signals using Python, AWS S3, Athena SQL, and Tableau to identify driving-state behavior, signal transitions, anomaly patterns, and session-level telemetry characteristics.
 
 This project simulates a real-world telemetry analytics workflow:
 
@@ -101,7 +101,7 @@ Signal Insight & KPI Reporting
 
 ### 3. Multi-file Validation
 
-![Session Behavior Comparison](./outputs/screenshots/kpi_analysis/03_behavior_and_extreme_events.png)
+![Session Comparison & Extreme Transition Events](./outputs/screenshots/kpi_analysis/03_behavior_and_extreme_events.png)
 
 - Processed multiple MF4 files
 - Extracted CAN ID 111 across all validation datasets
