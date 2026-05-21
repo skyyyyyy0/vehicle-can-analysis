@@ -134,7 +134,7 @@ The final Tableau dashboard includes:
 
 ## KPI Metrics
 
-![KPI Summary](./outputs/screenshots/kpi_analysis/02_kpi_summary_panel.png)
+![KPI Summary](./outputs/screenshots/kpi_analysis/02_kpi_and_transition_analysis.png)
 
 The dashboard includes the following KPIs:
 
