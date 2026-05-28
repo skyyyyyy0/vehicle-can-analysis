@@ -1,3 +1,16 @@
+"""
+Multi-file CAN telemetry validation pipeline.
+
+This script:
+- Loads multiple MF4 telemetry files
+- Extracts CAN ID 111 signal data
+- Calculates Byte 4 transition behavior
+- Segments driving vs idle states
+- Detects dynamic transition patterns
+- Generates session-level validation statistics
+- Exports validation CSV outputs for Tableau analysis
+"""
+
 from pathlib import Path
 from asammdf import MDF
 import pandas as pd
@@ -9,11 +22,11 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 VALIDATION_OUTPUT = OUTPUT_DIR / "multi_file_can_id_111.csv"
 VALIDATION_SUMMARY_OUTPUT = OUTPUT_DIR / "multi_file_validation_summary.csv"
 
-
-def get_mf4_files(data_dir: Path):
+# Search recursively for all MF4 telemetry files
+def get_mf4_files(data_dir: Path) -> list[Path]:
     return list(data_dir.rglob("*.MF4")) + list(data_dir.rglob("*.mf4"))
 
-
+# Extract CAN ID 111 telemetry records and split byte-level signals
 def extract_can_id_111(file_path: Path) -> pd.DataFrame:
     print(f"\nProcessing: {file_path.name}")
 
@@ -40,7 +53,7 @@ def extract_can_id_111(file_path: Path) -> pd.DataFrame:
 
     return df_111
 
-
+# Classify session behavior based on dynamic transition ratio
 def classify_session(dynamic_ratio: float) -> str:
     if dynamic_ratio < 0.05:
         return "stable"
@@ -49,7 +62,7 @@ def classify_session(dynamic_ratio: float) -> str:
     else:
         return "dynamic"
 
-
+# Main multi-file telemetry validation workflow
 def main():
     mf4_files = get_mf4_files(DATA_DIR)
 
@@ -80,6 +93,7 @@ def main():
         by=["file_name", "timestamp"]
     ).copy()
 
+    # Calculate Byte 4 transition magnitude per session
     validation_df["byte_4_diff"] = (
         validation_df
         .groupby("file_name")["byte_4"]
@@ -88,7 +102,8 @@ def main():
     )
     validation_df["byte_4_diff"] = validation_df["byte_4_diff"].fillna(0)
 
-    DRIVING_THRESHOLD = 20
+    # Heuristic threshold for driving-state detection
+    DRIVING_THRESHOLD = 20  # Byte 4 transition threshold for driving-state detection
 
     validation_df["driving_state"] = (
         validation_df["byte_4_diff"] > DRIVING_THRESHOLD

@@ -1,10 +1,18 @@
+"""
+Generate validation visualizations for multi-file CAN telemetry analysis.
+
+This script:
+- Loads the multi-file validation summary CSV
+- Visualizes dynamic transition ratio by MF4 file
+- Visualizes mean Byte 4 transition difference by MF4 file
+- Visualizes session behavior distribution
+- Saves validation plots for README, Tableau documentation, and portfolio use
+"""
+
 from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# =========================================
-# Path setup
-# =========================================
 
 OUTPUT_DIR = Path("outputs")
 SCREENSHOT_DIR = OUTPUT_DIR / "screenshots"
@@ -55,7 +63,7 @@ def plot_dynamic_transition_ratio(summary_df: pd.DataFrame) -> None:
 
 
 def plot_byte_4_diff_mean(summary_df: pd.DataFrame) -> None:
-    """Plot mean byte_4 transition difference by MF4 file."""
+    """Plot mean Byte 4 transition difference by MF4 file."""
 
     plt.figure(figsize=(12, 6))
 
@@ -65,9 +73,9 @@ def plot_byte_4_diff_mean(summary_df: pd.DataFrame) -> None:
     )
 
     plt.xticks(rotation=45, ha="right")
-    plt.ylabel("Mean byte_4_diff")
+    plt.ylabel("Mean Byte 4 Transition Difference")
     plt.xlabel("MF4 File")
-    plt.title("Mean byte_4 Transition Difference by MF4 File")
+    plt.title("Mean Byte 4 Transition Difference by MF4 File")
 
     plt.tight_layout()
 
@@ -105,6 +113,8 @@ def plot_session_behavior_distribution(summary_df: pd.DataFrame) -> None:
 
 
 def main() -> None:
+    """Run the validation visualization generation workflow."""
+
     summary_df = load_validation_summary()
 
     plot_dynamic_transition_ratio(summary_df)
