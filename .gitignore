@@ -17,6 +17,9 @@ outputs/raw_exports/*.csv
 
 # Tableau temp files
 *.hyper
+*.twbr
+.~*
 
 # AWS / credentials
 .env
+.env/
