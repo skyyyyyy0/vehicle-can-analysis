@@ -12,7 +12,7 @@ The pipeline processes CAN signals using Python, AWS S3, Athena SQL, and Tableau
 
 ## Key Achievements
 
-- Processed 1M+ CAN telemetry records from MF4 vehicle datasets
+- Processed and analyzed over 1 million CAN telemetry records across multiple MF4 datasets
 - Built an end-to-end analytics pipeline using Python, AWS Athena, and Tableau
 - Developed driving-state segmentation and anomaly detection workflows
 - Validated signal behavior across multiple telemetry sessions
@@ -160,8 +160,8 @@ The dashboard includes the following KPIs:
 - Driving records showed significantly higher Byte 4 transition magnitudes.
 - Extreme Byte 4 transitions were concentrated in specific telemetry regions.
 - Multi-file validation showed that dynamic transition behavior appeared repeatedly across multiple MF4 sessions.
-- The signal behavior could be separated into stable, mixed, and dynamic session patterns.
-
+- Telemetry sessions could be categorized into stable, mixed, and dynamic behavioral groups.
+- Byte 4 transition magnitude proved effective for distinguishing driving and idle vehicle operating states.
 ---
 
 ## Project Structure
@@ -233,28 +233,6 @@ outputs/athena_queries/
 
 ---
 
-## Dashboard Screenshots
-
-Dashboard screenshots are organized under:
-
-```text
-outputs/screenshots/
-```
-
-Recommended dashboard images include:
-
-```text
-01_full_dashboard.png
-02_kpi_and_transition_analysis.png
-03_behavior_and_extreme_events.png
-04_anomaly_detection_panel.png
-05_driving_state_distribution.png
-06_extreme_transition_events.png
-07_anomaly_detection_panel.png
-```
-
----
-
 ## Future Improvements
 
 - Add real-time CAN stream ingestion
@@ -266,12 +244,18 @@ Recommended dashboard images include:
 
 ---
 
-## Status
+## Project Outcome
 
-- MF4 parsing pipeline complete
-- Python preprocessing complete
-- Multi-file validation complete
-- AWS S3 storage complete
-- Athena SQL analytics complete
-- Tableau dashboard complete
-- Portfolio-ready documentation finalized
+Successfully developed an end-to-end vehicle telemetry analytics pipeline using Python, AWS Athena, and Tableau.
+
+The project demonstrated how undocumented CAN telemetry signals can be transformed into actionable insights through signal exploration, driving-state segmentation, anomaly detection, and multi-file validation workflows.
+
+The final solution integrated data engineering, cloud analytics, SQL-based exploration, and dashboard reporting into a unified analytics workflow.
+
+This project strengthened practical experience in:
+
+- Data Engineering
+- SQL Analytics
+- Cloud Analytics
+- Dashboard Development
+- Telemetry Data Interpretation
