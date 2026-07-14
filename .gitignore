@@ -20,6 +20,19 @@ outputs/raw_exports/*.csv
 *.twbr
 .~*
 
-# AWS / credentials
+# Sensitive raw telemetry data
+*.MF4
+*.mf4
+data/raw/
+data/processed/
+
+# Device metadata
+device.json
+config-*.json
+schema-*.json
+
+# Environment variables
 .env
+.env.*
 .env/
+!.env.example
