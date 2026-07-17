@@ -1,0 +1,5 @@
+actual_state,predicted_state,count
+Moving,Moving,4
+Moving,Idle,2
+Idle,Moving,0
+Idle,Idle,9

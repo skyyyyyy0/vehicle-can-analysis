@@ -1,0 +1,6 @@
+source_file,mf4_start_time,speed_records,speed_min_kmh,speed_mean_kmh,speed_max_kmh,moving_records,stationary_records,rpm_records,rpm_min,rpm_mean,rpm_max,usable_moving_file
+00007171-69EA7231.MF4,2026-03-18T17:59:53+00:00,600,0.0,4.0,10.98,256,229,2999,703.88,812.13,1336.25,True
+00007172-69EA7237.MF4,2026-03-18T17:59:53+00:00,600,0.0,0.0,0.0,0,600,2999,744.0,749.87,760.38,False
+00007173-69EA723B.MF4,2026-03-18T17:59:53+00:00,265,0.0,0.0,0.0,0,265,1323,0.0,311.58,754.5,False
+00007174-69EA723D.MF4,2026-03-18T17:59:53+00:00,0,,,,0,0,0,,,,False
+00007201-69EA7259.MF4,2026-03-18T17:59:53+00:00,0,,,,0,0,0,,,,False

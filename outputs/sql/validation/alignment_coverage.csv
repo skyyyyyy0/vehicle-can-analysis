@@ -1,0 +1,5 @@
+"vehicle_id","session_id","source_file","imu_windows","ground_truth_windows","matched_windows","unmatched_imu_windows","unmatched_ground_truth_windows","match_coverage_pct","label_mismatch_count","moving_count","idle_count","ambiguous_count","engine_off_candidate_count","coverage_status","label_status"
+"ALL","ALL","ALL_FILES","180","147","147","33","0","81.67","0","26","94","11","16","PARTIAL","PASS"
+"VEH_01","SES_01","FILE_001","60","60","60","0","0","100.0","0","26","23","11","0","COMPLETE","PASS"
+"VEH_01","SES_01","FILE_002","60","60","60","0","0","100.0","0","0","60","0","0","COMPLETE","PASS"
+"VEH_01","SES_01","FILE_003","60","27","27","33","0","45.0","0","0","11","0","16","PARTIAL","PASS"

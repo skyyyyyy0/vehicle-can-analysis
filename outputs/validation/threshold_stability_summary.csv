@@ -1,0 +1,2 @@
+selected_threshold,selected_macro_f1,selected_balanced_accuracy,selected_moving_recall,stable_threshold_min,stable_threshold_max,local_10pct_stability_pass,broad_20pct_stability_pass,max_macro_f1_drop,max_balanced_accuracy_drop,max_moving_recall_drop
+2.290542511310978,0.8712121212121211,0.8571428571428572,1.0,2.06148826017988,2.7486510135731734,True,False,0.15454545454545454,0.1428571428571429,0.050000000000000044

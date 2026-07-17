@@ -27,7 +27,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='02_byte4_trend_output_sample' name='textscan.01ou28p1rzp4ej13ol7sp15r7yl5'>
-            <connection class='textscan' directory='/Users/haneuljang/Desktop/vehicle-can-analysis/outputs/athena_query_outputs' filename='02_byte4_trend_output_sample.csv' password='' server='' />
+            <connection class='textscan' directory='../../athena_query_outputs' filename='02_byte4_trend_output_sample.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.01ou28p1rzp4ej13ol7sp15r7yl5' name='02_byte4_trend_output_sample.csv' table='[02_byte4_trend_output_sample#csv]' type='table'>

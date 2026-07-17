@@ -1,0 +1,16 @@
+check_name,status,observed,expected
+IMU Valid values,PASS,[np.int64(1)],0 or 1
+IMU Valid ratio,PASS,100.00%,At least 95%
+Acceleration physical range,PASS,0,0 values outside -64 to 63.875 m/s²
+Angular-rate physical range,PASS,0,0 values outside -256 to 255.75 deg/s
+Acceleration magnitude validity,PASS,0,0
+Angular-rate magnitude validity,PASS,0,0
+IMU 1-second duplicate keys,PASS,0,0
+Ground-Truth duplicate keys,PASS,0,0
+Aligned duplicate keys,PASS,0,0
+Required-column missing values,PASS,0,0
+Vehicle Speed validity,PASS,0,0
+Engine RPM validity,PASS,0,0
+Moving and Idle availability,PASS,"['ambiguous', 'engine_off_candidate', 'idle', 'moving']",moving and idle
+Ground-Truth matching,PASS,0,0
+Final aligned row count,PASS,147,147

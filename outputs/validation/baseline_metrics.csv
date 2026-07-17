@@ -1,0 +1,13 @@
+split_role,baseline_model,predicted_class,total_windows,moving_support,idle_support,predicted_moving,predicted_idle,tp,tn,fp,fn,accuracy,moving_precision,moving_recall,moving_f1,idle_precision,idle_recall,idle_f1,macro_f1,balanced_accuracy,false_positive_rate
+development,always_idle,idle,34,20,14,0,34,0,14,0,20,0.4117647058823529,0.0,0.0,0.0,0.4117647058823529,1.0,0.5833333333333334,0.2916666666666667,0.5,0.0
+development,always_moving,moving,34,20,14,34,0,20,0,14,0,0.5882352941176471,0.5882352941176471,1.0,0.7407407407407407,0.0,0.0,0.0,0.37037037037037035,0.5,1.0
+development,development_majority,moving,34,20,14,34,0,20,0,14,0,0.5882352941176471,0.5882352941176471,1.0,0.7407407407407407,0.0,0.0,0.0,0.37037037037037035,0.5,1.0
+within_session_validation,always_idle,idle,15,6,9,0,15,0,9,0,6,0.6,0.0,0.0,0.0,0.6,1.0,0.7499999999999999,0.37499999999999994,0.5,0.0
+within_session_validation,always_moving,moving,15,6,9,15,0,6,0,9,0,0.4,0.4,1.0,0.5714285714285715,0.0,0.0,0.0,0.28571428571428575,0.5,1.0
+within_session_validation,development_majority,moving,15,6,9,15,0,6,0,9,0,0.4,0.4,1.0,0.5714285714285715,0.0,0.0,0.0,0.28571428571428575,0.5,1.0
+idle_stress_test,always_idle,idle,60,0,60,0,60,0,60,0,0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,,,0.0
+idle_stress_test,always_moving,moving,60,0,60,60,0,0,0,60,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,1.0
+idle_stress_test,development_majority,moving,60,0,60,60,0,0,0,60,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,1.0
+transition_diagnostic,always_idle,idle,11,0,11,0,11,0,11,0,0,1.0,0.0,0.0,0.0,1.0,1.0,1.0,,,0.0
+transition_diagnostic,always_moving,moving,11,0,11,11,0,0,0,11,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,1.0
+transition_diagnostic,development_majority,moving,11,0,11,11,0,0,0,11,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,1.0

@@ -1,0 +1,15 @@
+{
+  "feature": "angular_rate_magnitude_mean",
+  "selected_threshold": 2.290542511310978,
+  "selection_dataset": "development",
+  "selection_metric": "macro_f1",
+  "development_macro_f1": 0.8712121212121211,
+  "development_balanced_accuracy": 0.8571428571428572,
+  "development_moving_recall": 1.0,
+  "stable_threshold_min": 2.06148826017988,
+  "stable_threshold_max": 2.7486510135731734,
+  "local_10pct_stability_pass": true,
+  "broad_20pct_stability_pass": false,
+  "validation_used_for_selection": false,
+  "threshold_frozen_before_validation": true
+}

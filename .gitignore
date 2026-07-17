@@ -36,3 +36,8 @@ schema-*.json
 .env.*
 .env/
 !.env.example
+
+# Local and generated files
+outputs/raw_exports/
+.DS_Store
+**/.ipynb_checkpoints/

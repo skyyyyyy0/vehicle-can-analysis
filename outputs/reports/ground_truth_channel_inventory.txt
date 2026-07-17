@@ -1,0 +1,8 @@
+
+FILE: 00000009-69DD2C07.MF4
+MF4 start time: 2026-03-13 17:59:41+00:00
+- No Speed/RPM/Ignition/GPS candidate channels found.
+
+FILE: 00000012-69DD2C09.MF4
+MF4 start time: 2026-03-13 17:59:41+00:00
+- No Speed/RPM/Ignition/GPS candidate channels found.

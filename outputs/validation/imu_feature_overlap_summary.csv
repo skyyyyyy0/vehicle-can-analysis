@@ -1,0 +1,2 @@
+feature,idle_median,moving_median,median_difference,idle_q3,moving_q1,central_iqr_gap,observed_overlap_exists,observed_overlap_lower,observed_overlap_upper,cohens_d
+angular_rate_magnitude_mean,1.9163034971833066,5.921202349988626,4.004898852805319,3.0919902587440475,3.86333352978705,0.7713432710430026,True,2.406449176058208,6.533350445598802,1.7097415806935654

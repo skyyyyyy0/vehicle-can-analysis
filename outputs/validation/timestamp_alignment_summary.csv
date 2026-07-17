@@ -1,0 +1,5 @@
+vehicle_id,session_id,source_file,can_windows,ground_truth_windows,matched_windows,unmatched_can_windows,unmatched_ground_truth_windows,match_coverage_pct
+VEH_01,SES_00000074,00007171-69EA7231.MF4,60,60,60,0,0,100.0
+VEH_01,SES_00000074,00007172-69EA7237.MF4,60,60,60,0,0,100.0
+VEH_01,SES_00000074,00007173-69EA723B.MF4,60,27,27,33,0,45.0
+ALL,ALL,ALL_FILES,180,147,147,33,0,81.67

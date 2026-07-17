@@ -1,0 +1,7 @@
+source_file,ground_truth_state,second_count
+00007171-69EA7231.MF4,ambiguous,11
+00007171-69EA7231.MF4,idle,23
+00007171-69EA7231.MF4,moving,26
+00007172-69EA7237.MF4,idle,60
+00007173-69EA723B.MF4,engine_off_candidate,16
+00007173-69EA723B.MF4,idle,11
