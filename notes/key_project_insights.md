@@ -28,7 +28,7 @@ This suggested that the observed signal behavior represented recurring telemetry
 
 ---
 
-## 4. Transition-based telemetry segmentation generalized successfully across datasets
+## 4. Transition patterns were repeatable across the exploratory datasets
 
 The transition-based segmentation heuristic remained consistent across multiple MF4 files and successfully differentiated stable and high-activity telemetry regions.
 

@@ -112,7 +112,7 @@ This pattern suggests intermittent operational state changes or mixed driving co
 
 ## 3. Driving vs idle segmentation consistency
 
-The driving vs idle segmentation logic generalized successfully across all MF4 datasets.
+The heuristic segmentation produced similar transition patterns across the exploratory MF4 files, but this did not constitute ground-truth validation.
 
 The segmentation process used byte_4 transition differences to identify:
 
@@ -255,7 +255,7 @@ Although transition intensity varied by session, the core signal characteristics
 
 The validation process demonstrated that:
 
-- transition detection logic generalized successfully
+- transition patterns were repeatable within the exploratory dataset
 - segmentation behavior remained consistent
 - dynamic transition patterns repeatedly appeared across datasets
 - stable and dynamic telemetry regions could be differentiated using transition-based analytics
