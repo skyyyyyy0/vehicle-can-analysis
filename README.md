@@ -14,7 +14,7 @@ The validation was limited to one anonymized vehicle and one observed session. T
 
 The final Tableau dashboard combines threshold selection, validation metrics, actual-versus-predicted states, confusion-matrix results, and misclassification analysis.
 
-![Vehicle CAN IMU Ground-Truth Validation Dashboard](./outputs/screenshots/vehicle_can_imu_validation_dashboard.png)
+![Vehicle CAN IMU Ground-Truth Validation Dashboard](./outputs/screenshots/dashboard_overview/vehicle_can_imu_validation_dashboard.png)
 
 Key dashboard metrics:
 
