@@ -56,7 +56,7 @@ The full CAN dataset was used only for exploratory analysis. Ground-truth conclu
 ## Tech Stack
 
 - **Data Processing:** Python, pandas, NumPy, asammdf
-- **Validation:** scikit-learn, Matplotlib
+- **Validation & Analysis:** pandas, NumPy, Matplotlib
 - **Cloud & SQL:** AWS S3, AWS Athena, SQL
 - **Visualization & Tools:** Tableau, Jupyter Notebook, Git, GitHub
 
@@ -181,8 +181,7 @@ vehicle-can-analysis/
 ├── src/                          # Python processing and validation
 ├── sql/
 │   └── validation/               # Athena validation queries
-├── notes/
-│   └── validation/               # Findings and error analysis
+├── notes/                        # Findings and error analysis
 ├── outputs/
 │   ├── validation/               # Metrics and predictions
 │   ├── sql/validation/           # Athena outputs
